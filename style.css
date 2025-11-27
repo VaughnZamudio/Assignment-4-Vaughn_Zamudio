@@ -1,0 +1,132 @@
+/* Reset basics */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #fff;
+    color: #333;
+}
+
+/* --- Header Styling (Flexbox) --- */
+header {
+    background-color: #e0e0e0; /* Matching the gray header in wireframe */
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 150px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.1rem;
+}
+
+.search-container input {
+    padding: 8px;
+    border: 1px solid #999;
+    background-color: #dcdcdc;
+}
+
+/* --- Main Layout --- */
+main {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.content-section {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+h2 {
+    background-color: #dcdcdc; /* The gray title bars in wireframe */
+    display: inline-block;
+    padding: 10px 40px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+}
+
+/* --- Grid System for Cards --- */
+.grid-container {
+    display: grid;
+    /* This creates 5 columns, matching your sketch */
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 20px;
+    justify-items: center;
+}
+
+/* --- Card Styles --- */
+.card {
+    background-color: #e0e0e0;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.2s; /* Smooth hover effect */
+}
+
+/* Book Images */
+.book-card img {
+    width: 100%;
+    height: auto;
+    background-color: #ccc;
+    margin-bottom: 10px;
+}
+
+/* Genre Cards (Tall rectangles) */
+.genre-card {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+/* --- Creator Section (Circles) --- */
+.creator-profile {
+    text-align: center;
+    cursor: pointer;
+}
+
+.creator-profile img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; /* Makes the image a circle */
+    object-fit: cover;
+    background-color: #ccc;
+    margin-bottom: 10px;
+    border: 3px solid transparent;
+    transition: border-color 0.3s;
+}
+
+/* Responsive adjustment for smaller screens */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* Switch to 2 columns on mobile */
+    }
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+    nav ul {
+        gap: 15px;
+        font-size: 0.9rem;
+    }
+}
