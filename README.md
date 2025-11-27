@@ -2,7 +2,7 @@ Project: Book Discovery Website
 Student Name: Vaughn Zamudio
 
 Design Implemented:
-I implemented a layout based on a Figma wireframe for a book discovery platform. The design features a centered navigation bar, a "Trending Now" section with vertical book covers, an "Explore by Genre" section with tall cards, and a "Creator" section featuring circular profile images. The aesthetic matches the wireframe's clean, grayscale look.
+I implemented a layout based on a Figma wireframe for a book discovery platform I did for the Week 8 Monday Activity. The design features a centered navigation bar, a "Trending Now" section with vertical book covers, an "Explore by Genre" section with tall cards, and a "Creator" section featuring circular profile images. The aesthetic matches the wireframe's clean, grayscale look.
 
 JavaScript Interactions:
 1. Search Functionality: When the user types in the search bar and hits "Enter," an alert confirms the search term.
