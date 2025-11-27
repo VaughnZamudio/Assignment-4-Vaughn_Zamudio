@@ -1,13 +1,17 @@
-Project: Book Discovery Website
+Project: NextRead Book Discovery Website
 Student Name: Vaughn Zamudio
 
-Design Implemented:
-I implemented a layout based on a Figma wireframe for a book discovery platform I did for the Week 8 Monday Activity. The design features a centered navigation bar, a "Trending Now" section with vertical book covers, an "Explore by Genre" section with tall cards, and a "Creator" section featuring circular profile images. The aesthetic matches the wireframe's clean, grayscale look.
+1. Design Implemented:
+I transformed my wireframe from Week 8 Monday Activity into a "Vibrant Modern Bookstore" theme. 
+- Layout: I kept the wireframe's structure exactly (Header, Grid of Books, Grid of Genres, Circular Creators).
+- Aesthetic: I upgraded the visual style from the sketch's plain look to a vibrant Purple and Coral color scheme to make it feel energetic and modern. I used Flexbox for the navigation bar and CSS Grid for the content sections to ensure everything aligns perfectly.
 
-JavaScript Interactions:
-1. Search Functionality: When the user types in the search bar and hits "Enter," an alert confirms the search term.
-2. Book Selection: Clicking on any book cover in the "Trending" section toggles a black border around the card to simulate selecting a book.
-3. Follow Creator: Clicking on a circular creator profile changes the text below the image to "Following!" in green text, simulating a social follow action.
+2. JavaScript Interactions:
+My script.js includes three distinct interactions:
+- Search Bar Input: Listens for the 'Enter' key. When pressed, it alerts the user with their search term.
+- Book Selection (Click): Uses a "toggle" function. Clicking a book cover adds a visual border to show it is selected.
+- Creator Follow (Click): Clicking a user profile updates the DOM text from their name to "Following!" to simulate a social media feature.
 
-Challenges Faced:
-One challenge was ensuring the grid layout switched from the 5-column layout (required by the wireframe) to a smaller column layout on mobile devices so the content wouldn't get squished. I solved this using a Media Query in CSS. Another challenge was selecting multiple elements in JavaScript (like all books), which I solved using querySelectorAll and a forEach loop.
+3. Challenges Faced:
+- CSS Grid: It was initially tricky to get the images to look uniform. I solved this by using `object-fit: cover` and setting fixed heights in the CSS.
+- Mobile Responsiveness: The 5-column grid looked bad on small screens. I added a Media Query (@media) to switch to a 2-column layout on screens smaller than 768px.
